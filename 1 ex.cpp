@@ -15,29 +15,34 @@
 
 int main(){
 	
-	int nota;
+	float nota;
 	
-	printf("porfavor entre com a nota do aluno");
-	printf("OBS: entre com numeros de 0 a 100");
-	scanf("%d", &nota);
+	printf("porfavor entre com a nota do aluno\n\n");
 	
-	if (90>=nota , nota<=100){
+	printf("OBS: entre com numeros de 0 a 100\n\n");
+	
+	scanf("%f", &nota);
+	
+	if (nota>=90 , nota<=100){
 		printf("aluno recebera conceito, A");
 	}else{
-		if (80>=nota , nota<=89){
+		if (nota>=80 , nota<=89){
 			printf("aluno recebera conceito, B");
 		}else{
-			if (70>=nota , nota<=79){
+			if (nota>=70 , nota<=79){
 				printf("aluno recebera conceito, C");
 			}else{
-				if (60>=nota , nota<=69){
+				if (nota>=60 , nota<=69){
 					printf("aluno recebera conceito, D");
 				}else{
-					if (50>=nota , nota<=59){
+					if (nota>=50 , nota<=59){
 						printf("aluno recebera conceito, E");
 					}else{
-						if (nota<50){
-							printf("Parabens aluno recebera conceito, E");
+						if (nota<50, nota>=0){
+							printf("Parabens aluno recebera conceito, F");
+						}else {
+						printf("ERRO");
+						
 						}
 					}
 				}
